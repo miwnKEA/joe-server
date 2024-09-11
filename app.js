@@ -5,14 +5,21 @@ const app = express();
 
 app.use(cors());
 app.use("/static", express.static("public"));
+app.use((req, res, next) => {
+    console.log("----- HTTP Request -----");
+    console.log(`Method: ${req.method}`); // HTTP Method
+    console.log(`URL: ${req.originalUrl}`); // Requested URL
+    console.log("Headers:", req.headers); // Request Headers
+    console.log(`IP: ${req.ip}`); // IP Address
+    console.log("------------------------");
+    next();
+});
 
 app.get("/", (req, res) => {
-  console.log(req);
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get("/res", (req, res) => {
-  console.log(req);
   res.send("Response message from server");
 });
 
