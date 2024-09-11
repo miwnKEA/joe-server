@@ -7,10 +7,12 @@ app.use(cors());
 app.use("/static", express.static("public"));
 
 app.get("/", (req, res) => {
+  console.log(req);
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get("/res", (req, res) => {
+  console.log(req);
   res.send("Response message from server");
 });
 
