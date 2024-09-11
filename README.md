@@ -24,7 +24,7 @@ node -v
 
 ## pm2 install
 
-sudo npm install pm2@latest -g
+sudo npm install pm2@latest -g
 
 pm2 start app.js
 
