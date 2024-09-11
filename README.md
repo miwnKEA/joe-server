@@ -70,6 +70,8 @@ sudo nginx -v
 
 systemctl status nginx
 
+## Nginx konfiguration
+
 sudo ufw app list
 
 sudo ufw allow 'Nginx HTTP'
@@ -79,8 +81,6 @@ ufw allow OpenSSH
 sudo ufw enable
 
 sudo ufw status
-
-## Nginx konfiguration
 
 sudo nano /etc/nginx/sites-available/default
 
