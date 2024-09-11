@@ -1,7 +1,7 @@
 let responseDom = document.getElementById("response")
 
 function getResponse(){
-  axios.get('http://localhost:3000/res')
+  axios.get('/res')
   .then(function (response) {
     // handle success
     console.log(response);
