@@ -8,6 +8,20 @@ npm install
 
 node app.js
 
+## Node.js install
+
+[Link til dokumentation]([URL](https://github.com/nodesource/distributions?tab=readme-ov-file#using-ubuntu-nodejs-18))
+
+sudo apt-get install -y curl
+
+curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+
+sudo -E bash nodesource_setup.sh
+
+sudo apt-get install -y nodejs
+
+node -v
+
 ## pm2 install
 
 sudo npm install pm2@latest -g
