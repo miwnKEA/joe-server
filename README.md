@@ -10,7 +10,7 @@ node app.js
 
 ## Node.js install
 
-[Link til dokumentation]([URL](https://github.com/nodesource/distributions?tab=readme-ov-file#using-ubuntu-nodejs-18))
+[Link til dokumentation](https://github.com/nodesource/distributions?tab=readme-ov-file#using-ubuntu-nodejs-18)
 
 sudo apt-get install -y curl
 
